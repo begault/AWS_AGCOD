@@ -1,0 +1,529 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456987","value":{"currencyCode":"GBP","amount":1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:25 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223025Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 7e2c887c-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '287'
+      Date:
+      - Tue, 18 Nov 2014 22:30:27 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardInfo":{"cardNumber":null,"cardStatus":"Fulfilled","expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id123456987","gcClaimCode":"66VK-BP35V8-VEDW","gcExpirationDate":"Wed Sep 25 22:59:59 UTC 2024","gcId":"A21GJ9E661GJ2Y","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:27 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456987","value":{"currencyCode":"GBP","amount":null}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:27 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223027Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Amzn-Requestid:
+      - 7ed3ec0e-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      Date:
+      - Tue, 18 Nov 2014 22:30:27 GMT
+      Cneonction:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {"Message":null}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:27 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456987","value":{"currencyCode":"GBP","amount":20000}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:27 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223027Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Amzn-Requestid:
+      - 7ef57dcf-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '429'
+      Date:
+      - Tue, 18 Nov 2014 22:30:28 GMT
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {"agcodResponse":{"__type":"CreateGiftCardResponse:http://internal.amazon.com/coral/com.amazonaws.agcod/","cardInfo":{"cardNumber":null,"cardStatus":null,"expirationDate":null,"value":{"amount":20000.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id123456987","gcClaimCode":null,"gcExpirationDate":null,"gcId":null,"status":"FAILURE"},"errorCode":"F300","errorType":"OperationNotPermitted","message":"Operation Not Permitted"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:28 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456987","value":{"currencyCode":"GBP","amount":-1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:28 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223028Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Amzn-Requestid:
+      - 7f8e620d-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '328'
+      Date:
+      - Tue, 18 Nov 2014 22:30:28 GMT
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {"agcodResponse":{"__type":"CreateGiftCardResponse:http://internal.amazon.com/coral/com.amazonaws.agcod/","cardInfo":null,"creationRequestId":"partner_id123456987","gcClaimCode":null,"gcExpirationDate":null,"gcId":null,"status":"FAILURE"},"errorCode":"F200","errorType":"InvalidAmountValue","message":"Amount must be larger than 0"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:28 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id","value":{"currencyCode":"GBP","amount":1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:28 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223028Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 7fb635c1-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '278'
+      Date:
+      - Tue, 18 Nov 2014 22:30:29 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardInfo":{"cardNumber":null,"cardStatus":"Fulfilled","expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id","gcClaimCode":"WZQK-QSZDVK-XPDS","gcExpirationDate":"Wed Sep 25 22:59:59 UTC 2024","gcId":"A2MBAOS6080FQG","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:29 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456789123456789","value":{"currencyCode":"GBP","amount":1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:29 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223029Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Amzn-Requestid:
+      - 807df22e-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '451'
+      Date:
+      - Tue, 18 Nov 2014 22:30:30 GMT
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {"agcodResponse":{"__type":"CreateGiftCardResponse:http://internal.amazon.com/coral/com.amazonaws.agcod/","cardInfo":{"cardNumber":null,"cardStatus":null,"expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id123456789123456789","gcClaimCode":null,"gcExpirationDate":null,"gcId":null,"status":"FAILURE"},"errorCode":"F200","errorType":"RequestIdTooLong","message":"Request Id Too Long, Max allowed length is 19"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:30 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id1=!4&5*9-7}%","value":{"currencyCode":"GBP","amount":1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:30 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223030Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 80d9a724-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '290'
+      Date:
+      - Tue, 18 Nov 2014 22:30:31 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardInfo":{"cardNumber":null,"cardStatus":"Fulfilled","expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id1=!4&5*9-7}%","gcClaimCode":"6P2G-9AAEMA-T2CD","gcExpirationDate":"Wed Sep 25 22:59:59 UTC 2024","gcId":"A39H06OEAA0XO1","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:31 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id123456987","value":{"currencyCode":"GBP","amount":1.5}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:31 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223031Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 817bb320-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '287'
+      Date:
+      - Tue, 18 Nov 2014 22:30:32 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardInfo":{"cardNumber":null,"cardStatus":"Fulfilled","expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_id123456987","gcClaimCode":"66VK-BP35V8-VEDW","gcExpirationDate":"Wed Sep 25 22:59:59 UTC 2024","gcId":"A21GJ9E661GJ2Y","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:32 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CancelGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_id8794561264","gcId":"A2GCN9BRX5QS76"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:32 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223032Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CancelGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Amzn-Requestid:
+      - 82211ae2-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '268'
+      Date:
+      - Tue, 18 Nov 2014 22:30:33 GMT
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {"agcodResponse":{"__type":"CancelGiftCardResponse:http://internal.amazon.com/coral/com.amazonaws.agcod/","creationRequestId":"partner_id8794561264","gcId":null,"status":"FAILURE"},"errorCode":"F300","errorType":"OperationNotPermitted","message":"Operation Not Permitted"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:33 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CreateGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_idCHIYP","value":{"currencyCode":"GBP","amount":1.0}}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:33 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223033Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CreateGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 82c65bf7-6f72-11e4-9b47-c71712d1923e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '293'
+      Date:
+      - Tue, 18 Nov 2014 22:30:34 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardInfo":{"cardNumber":null,"cardStatus":"RefundedToPurchaser","expirationDate":null,"value":{"amount":1.0,"currencyCode":"GBP"}},"creationRequestId":"partner_idCHIYP","gcClaimCode":"Z9UV-8PQH65-GR7F","gcExpirationDate":"Mon Nov 18 23:59:59 UTC 2024","gcId":"A2TSSYZ6M77V9I","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:34 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/CancelGiftCard
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","creationRequestId":"partner_idCHIYP","gcId":"A2TSSYZ6M77V9I"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:34 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223034Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.CancelGiftCard
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 83650c94-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '78'
+      Date:
+      - Tue, 18 Nov 2014 22:30:35 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"creationRequestId":"partner_idCHIYP","gcId":"A2TSSYZ6M77V9I","status":"SUCCESS"}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:36 GMT
+- request:
+    method: post
+    uri: https://agcod-v2-eu-gamma.amazon.com/GetGiftCardActivityPage
+    body:
+      encoding: UTF-8
+      string: '{"partnerId":"partner_id","requestId":"123456987","utcStartDate":"2014-09-01T00:00:00Z","utcEndDate":"2014-09-30T00:00:00Z","pageIndex":0,"pageSize":200,"showNoOps":true}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.5.2, ruby 2.1.3 (2014-09-19))
+      Accept:
+      - application/json
+      Date:
+      - 2014-11-18 22:30:36 UTC
+      Content-Type:
+      - application/json
+      X-Amz-Date:
+      - 20141118T223036Z
+      Host:
+      - agcod-v2-eu-gamma.amazon.com
+      X-Amz-Target:
+      - com.amazonaws.agcod.AGCODService.GetGiftCardActivityPage
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=random_access_key/20141118/eu-west-1/AGCODService/aws4_request,
+        SignedHeaders=accept;content-type;date;host;x-amz-date;x-amz-target, Signature=XXX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 846c6a77-6f72-11e4-a2b3-970fadb42577
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10019'
+      Date:
+      - Tue, 18 Nov 2014 22:30:37 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {"cardActivityList":[{"activityStatus":"Success","activityTime":"Mon Sep 22 16:39:07 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":10.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A1UJH7660ANXNT","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id123456"},{"activityStatus":"Success","activityTime":"Tue Sep 23 10:04:57 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A2ST2CNHZFR5GT","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id234596"},{"activityStatus":"Failed","activityTime":"Tue Sep 23 10:05:10 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":"OperationNotPermitted","gcId":"A1UJH7660ANXNT","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234567"},{"activityStatus":"Failed","activityTime":"Tue Sep 23 10:05:34 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":"OperationNotPermitted","gcId":"A2ST2CNHZFR5GT","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234567"},{"activityStatus":"Success","activityTime":"Tue Sep 23 15:16:25 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A2GPH945KU6FN0","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id234597"},{"activityStatus":"Failed","activityTime":"Tue Sep 23 15:18:51 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":"OperationNotPermitted","gcId":"A1UJH7660ANXNT","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234567"},{"activityStatus":"Success","activityTime":"Wed Sep 24 08:48:57 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 08:50:19 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:27:31 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:28:17 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:30:11 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:30:31 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:45:50 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:47:58 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:57:56 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 09:59:28 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Wed Sep 24 10:25:29 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Thu Sep 25 13:07:04 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":null,"gcId":"AY7HIWVDE2TW7","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id234598"},{"activityStatus":"Success","activityTime":"Thu Sep 25 15:32:57 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A2EHY8NLBDMEV8","isRealOp":"true","partnerId":"partner_id","requestId":"partner_idWUA3X-KFE5D"},{"activityStatus":"Success","activityTime":"Thu Sep 25 15:58:39 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A21GJ9E661GJ2Y","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Failed","activityTime":"Thu Sep 25 16:19:06 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":20000.0,"currencyCode":"GBP"},"failureCode":"OperationNotPermitted","gcId":null,"isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Success","activityTime":"Thu Sep 25 16:19:11 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A2MBAOS6080FQG","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id"},{"activityStatus":"Failed","activityTime":"Thu Sep 25 16:19:12 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":"RequestIdTooLong","gcId":null,"isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456789123456789"},{"activityStatus":"Success","activityTime":"Thu Sep 25 16:19:16 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A39H06OEAA0XO1","isRealOp":"true","partnerId":"partner_id","requestId":"partner_id1=!4&5*9-7}%"},{"activityStatus":"Success","activityTime":"Thu Sep 25 16:19:17 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.5,"currencyCode":"GBP"},"failureCode":null,"gcId":"A21GJ9E661GJ2Y","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Success","activityTime":"Thu Sep 25 17:37:42 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A21GJ9E661GJ2Y","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Failed","activityTime":"Thu Sep 25 17:37:45 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":20000.0,"currencyCode":"GBP"},"failureCode":"OperationNotPermitted","gcId":null,"isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Success","activityTime":"Thu Sep 25 17:37:46 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A2MBAOS6080FQG","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id"},{"activityStatus":"Failed","activityTime":"Thu Sep 25 17:37:47 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":"RequestIdTooLong","gcId":null,"isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456789123456789"},{"activityStatus":"Success","activityTime":"Thu Sep 25 17:37:48 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A39H06OEAA0XO1","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id1=!4&5*9-7}%"},{"activityStatus":"Success","activityTime":"Thu Sep 25 17:37:49 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.5,"currencyCode":"GBP"},"failureCode":null,"gcId":"A21GJ9E661GJ2Y","isRealOp":"false","partnerId":"partner_id","requestId":"partner_id123456987"},{"activityStatus":"Success","activityTime":"Fri Sep 26 12:20:16 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":5.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A18VWF269IRKEE","isRealOp":"true","partnerId":"partner_id","requestId":"partner_idQVB8D-E7KZM"},{"activityStatus":"Success","activityTime":"Fri Sep 26 14:48:10 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A10AI2USJVNF0M","isRealOp":"true","partnerId":"partner_id","requestId":"partner_idtest_1"},{"activityStatus":"Success","activityTime":"Fri Sep 26 14:49:53 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":null,"gcId":"A10AI2USJVNF0M","isRealOp":"true","partnerId":"partner_id","requestId":"partner_idtest_1"},{"activityStatus":"Success","activityTime":"Fri Sep 26 14:50:15 UTC 2014","activityType":"GCCreation","cardNumber":null,"cardValue":{"amount":1.0,"currencyCode":"GBP"},"failureCode":null,"gcId":"A10AI2USJVNF0M","isRealOp":"false","partnerId":"partner_id","requestId":"partner_idtest_1"},{"activityStatus":"Success","activityTime":"Fri Sep 26 14:51:00 UTC 2014","activityType":"GCCancellation","cardNumber":null,"cardValue":null,"failureCode":null,"gcId":"A10AI2USJVNF0M","isRealOp":"false","partnerId":"partner_id","requestId":"partner_idtest_1"}],"pageIndex":0,"requestId":"123456987","status":"SUCCESS","totalNumberOfTransactionsInRequestedTimeFrame":36}
+    http_version: 
+  recorded_at: Tue, 18 Nov 2014 22:30:37 GMT
+recorded_with: VCR 2.9.3

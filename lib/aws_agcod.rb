@@ -6,11 +6,11 @@ require 'httpclient'
 
 module AwsAgcod
 
-  # Check the AGCOD Service status as wellas the connectivity to the host to the endpoint
+  # Check the AGCOD Service status as well as the connectivity to the host to the endpoint
   # @return State of connection and message
-  def health_check
+  def self.health_check(country)
     action = 'sping'
-    uri = AwsAgcod.uri(action, @credentials.country)
+    uri = AwsAgcod.uri(action, country)
 
     Rails.logger.info("***\r\n: Amazon AGCOD REQUEST / GET: \n Uri: #{uri} \r\n")
     response = HTTPClient.new.get uri.to_s

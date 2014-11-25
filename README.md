@@ -34,10 +34,19 @@ config = {access_key: 'random_access_key',
      region: 'eu-west-1',
     host_url: 'https://agcod-v2-eu-gamma.amazon.com'}
 authentication = AwsAgcod::AuthenticationCredentials.new(config)
+
 # Generate a new code
 request_id = 'your_request_id'
 amount = 5 # 5 €
 AwsAgcod::GiftCard.new(authentication).create(request_id, amount)
+
+# Check for transactions
+start_date = DateTime.parse('2014-01-01')
+end_date = DateTime.parse('2014-12-31')
+AwsAgcod::Transaction.new(authentication).get_activity_page(request_id, start_date, end_date)
+
+# Check for AWS Agcod Service Host
+AwsAgcod.health_check('FR')
 ```
 
 ## Contributing

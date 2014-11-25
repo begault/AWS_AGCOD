@@ -1,4 +1,5 @@
 # AwsAgcod
+[![Build Status](https://travis-ci.org/begault/AWS_AGCOD.svg)](https://travis-ci.org/begault/AWS_AGCOD) [![Code Climate](https://codeclimate.com/github/begault/AWS_AGCOD/badges/gpa.svg)](https://codeclimate.com/github/begault/AWS_AGCOD)
 
 Amazon Gift Codes On Demand (AGCOD) is a set of systems provided by Amazon and designed to allow partners and third party developers
 to create and distribute Amazon gift codes in real-time, on demand.

@@ -1,4 +1,7 @@
 require "aws_agcod/version"
+require "aws_agcod/gift_card"
+require "aws_agcod/transaction"
+require "aws_agcod/authentication_credentials"
 require 'json'
 require 'aws4'
 require 'logger'

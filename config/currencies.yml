@@ -1,3 +1,6 @@
-GB: 'GBP'
-FR: 'EUR'
+CA: 'CAD'
 DE: 'EUR'
+FR: 'EUR'
+GB: 'GBP'
+JP: 'JPY'
+US: 'USD'

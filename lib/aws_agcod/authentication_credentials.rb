@@ -5,7 +5,7 @@ module AwsAgcod
 
     attr_reader :access_key, :secret_key, :region, :country, :partner_id, :host_url
 
-    CURRENCIES = YAML.load_file('config/currencies.yml')
+    CURRENCIES = YAML.load_file(File.join(File.dirname(__FILE__),'../../config/currencies.yml'))
 
       def initialize(config)
       @access_key = config[:access_key] || config["access_key"]
@@ -17,7 +17,6 @@ module AwsAgcod
     end
 
     def currency_code
-      puts "\n CURRENCIES: #{CURRENCIES}"
       CURRENCIES[@country]
     end
   end

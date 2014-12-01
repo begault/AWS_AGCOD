@@ -17,7 +17,6 @@ module AwsAgcod
     end
 
     def currency_code
-      puts "\n CURRENCIES: #{CURRENCIES}"
       CURRENCIES[@country]
     end
   end

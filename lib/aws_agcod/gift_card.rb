@@ -22,9 +22,7 @@ module AwsAgcod
           }
       }
       response = AwsAgcod.post_http_request(credentials, action, parameters, request_id)
-      test = AwsAgcod.format_response(response)
-      puts "\n Test: #{test}"
-      test
+      AwsAgcod.format_response(response)
     end
 
     # Cancel a gift card
